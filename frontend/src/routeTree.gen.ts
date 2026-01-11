@@ -8,16 +8,16 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { Route as rootRouteImport } from './routes/__root'
-import { Route as SignupRouteImport } from './routes/signup'
-import { Route as ResetPasswordRouteImport } from './routes/reset-password'
-import { Route as RecoverPasswordRouteImport } from './routes/recover-password'
-import { Route as LoginRouteImport } from './routes/login'
-import { Route as LayoutRouteImport } from './routes/_layout'
-import { Route as LayoutIndexRouteImport } from './routes/_layout/index'
-import { Route as LayoutSettingsRouteImport } from './routes/_layout/settings'
-import { Route as LayoutItemsRouteImport } from './routes/_layout/items'
-import { Route as LayoutAdminRouteImport } from './routes/_layout/admin'
+import { Route as rootRouteImport } from './api-routes/__root'
+import { Route as SignupRouteImport } from './api-routes/signup'
+import { Route as ResetPasswordRouteImport } from './api-routes/reset-password'
+import { Route as RecoverPasswordRouteImport } from './api-routes/recover-password'
+import { Route as LoginRouteImport } from './api-routes/login'
+import { Route as LayoutRouteImport } from './api-routes/_layout'
+import { Route as LayoutIndexRouteImport } from './api-routes/_layout/index'
+import { Route as LayoutSettingsRouteImport } from './api-routes/_layout/settings'
+import { Route as LayoutItemsRouteImport } from './api-routes/_layout/items'
+import { Route as LayoutAdminRouteImport } from './api-routes/_layout/admin'
 
 const SignupRoute = SignupRouteImport.update({
   id: '/signup',
