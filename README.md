@@ -146,6 +146,18 @@ python -c "import secrets; print(secrets.token_urlsafe(32))"
 
 Copy the content and use that as password / secret key. And run that again to generate another secure key.
 
+## API Endpoints
+
+The following API endpoints are available:
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/auth`  | POST   | JWT login   |
+| `/login`| POST   | Login       |
+| `/recover-password`| POST   | Recover password       |
+| `/reset-password`| POST   | Reset password       |
+| `/signup`| POST   | Signup       |
+
 ## How To Use It - Alternative With Copier
 
 This repository also supports generating a new project using [Copier](https://copier.readthedocs.io).
@@ -200,34 +212,4 @@ The input variables, with their default values (some auto generated) are:
 - `first_superuser`: (default: `"admin@example.com"`) The email of the first superuser (in .env).
 - `first_superuser_password`: (default: `"changethis"`) The password of the first superuser (in .env).
 - `smtp_host`: (default: "") The SMTP server host to send emails, you can set it later in .env.
-- `smtp_user`: (default: "") The SMTP server user to send emails, you can set it later in .env.
-- `smtp_password`: (default: "") The SMTP server password to send emails, you can set it later in .env.
-- `emails_from_email`: (default: `"info@example.com"`) The email account to send emails from, you can set it later in .env.
-- `postgres_password`: (default: `"changethis"`) The password for the PostgreSQL database, stored in .env, you can generate one with the method above.
-- `sentry_dsn`: (default: "") The DSN for Sentry, if you are using it, you can set it later in .env.
-
-## Backend Development
-
-Backend docs: [backend/README.md](./backend/README.md).
-
-## Frontend Development
-
-Frontend docs: [frontend/README.md](./frontend/README.md).
-
-## Deployment
-
-Deployment docs: [deployment.md](./deployment.md).
-
-## Development
-
-General development docs: [development.md](./development.md).
-
-This includes using Docker Compose, custom local domains, `.env` configurations, etc.
-
-## Release Notes
-
-Check the file [release-notes.md](./release-notes.md).
-
-## License
-
-The Full Stack FastAPI Template is licensed under the terms of the MIT license.
+- `smtp_user`: (default: "") The SMTP server user to send emails, you can set it later in .env
